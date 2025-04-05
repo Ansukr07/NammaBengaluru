@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Crowd Tracker</title>
+  <link rel="stylesheet" href="traffic.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Place Crowd Tracker</h1>
+    
+    <!-- Input Form -->
+    <div class="form-section">
+      <h2>Submit Crowd Level</h2>
+      <input type="text" id="placeName" placeholder="Enter place name" />
+      <select id="crowdLevel">
+        <option value="" disabled selected>Choose crowd level</option>
+        <option value="empty">Empty</option>
+        <option value="partially-filled">Partially Filled</option>
+        <option value="crowded">Crowded</option>
+      </select>
+      <button id="submitBtn">Submit</button>
+    </div>
+    
+    <!-- Display Section -->
+    <div class="results-section">
+      <h2>Crowd Levels</h2>
+      <ul id="resultsList">
+        <!-- Results will appear here -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="traffic.js"></script>
+</body>
+</html>

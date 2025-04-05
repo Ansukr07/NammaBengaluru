@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safety Index</title>
+  <link rel="stylesheet" href="safety.css">
+</head>
+<body>
+  <header>
+    <h1>Safety Index</h1>
+  </header>
+  <main>
+    <section class="area-list">
+      <h2>Explore Areas</h2>
+      <ul id="areas">
+        <!-- Areas will be dynamically populated here -->
+      </ul>
+    </section>
+
+    <section id="area-details" class="details hidden">
+      <h2 id="area-name"></h2>
+      <p><strong>Crime Rate:</strong> <span id="crime-rate"></span>/10</p>
+      <p><strong>Street Food Quality:</strong> <span id="street-food"></span>/10</p>
+      <p><strong>Cleanliness:</strong> <span id="cleanliness"></span>/10</p>
+      <div id="other-details"></div>
+      
+      <form id="review-form">
+        <h3>Leave a Review</h3>
+        <textarea id="review-text" placeholder="Write your review..." required></textarea>
+        <input type="number" id="review-rating" placeholder="Your rating (1-10)" min="1" max="10" required>
+        <button type="submit">Submit Review</button>
+      </form>
+
+      <div class="review-button-container">
+        <button id="show-reviews-button">See Reviews</button>
+      </div>
+    </section>
+
+    <section id="reviews-section" class="reviews hidden">
+      <h2>Reviews for <span id="reviews-area-name"></span></h2>
+      <ul id="reviews-list">
+        <!-- Reviews will be dynamically loaded here -->
+      </ul>
+      <button id="back-to-details">Back to Area Details</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Safety Index Initiative</p>
+  </footer>
+  <script src="safety.js"></script>
+</body>
+</html>

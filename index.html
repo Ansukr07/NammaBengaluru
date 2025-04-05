@@ -1,0 +1,357 @@
+<style>
+    *{
+      margin:0;
+      padding: 0;
+      }
+    .landing-container {
+      align-items: center;
+      box-shadow: -24px -28px 140px 0px rgba(0, 0, 0, 0.1);
+      background: #fff;
+      display: flex;
+      gap: 10px;
+      overflow: hidden;
+      justify-content: start;
+      margin: 0 auto;
+      width: 100%;
+    }
+    
+    .main-wrapper {
+      align-self: stretch;
+      position: relative;
+      display: flex;
+      width: 1242px;
+      align-items: start;
+      gap: -78px;
+      justify-content: start;
+      flex-wrap: wrap;
+      margin: auto auto;
+    }
+    
+    .header-container {
+      justify-content: center;
+      align-items: center;
+      background: var(--Neutral-White, #fff);
+      box-shadow: 0px 2.784px 5.569px 0px rgba(171, 190, 209, 0.4);
+      z-index: 1;
+      display: flex;
+      min-width: 100%;
+      gap: 40px 44px;
+      flex-grow: 1;
+      width: 954px;
+      padding: 11px 100px;
+      font: 500 11px Inter, sans-serif;
+    }
+    
+    .nav-menu {
+      align-self: stretch;
+      display: flex;
+      min-width: 240px;
+      width: 100%;
+      align-items: center;
+      gap: 22px;
+      justify-content: end;
+      flex-wrap: wrap;
+      flex: 1;
+    }
+    
+    .menu-items {
+      align-self: stretch;
+      display: flex;
+      min-width: 240px;
+      align-items: start;
+      gap: 17px;
+      color: var(--Neutral-D_Grey, #4d4d4d);
+      justify-content: start;
+      margin: auto 0;
+      list-style: none;
+    }
+    
+    .nav-link {
+      align-self: stretch;
+      width: 71px;
+      gap: 6px;
+      text-align: center;
+      list-style: none;
+      text-decoration: none;
+      color: #4caf4f;
+    }
+    
+    .cta-button {
+      justify-content: center;
+      align-items: center;
+      border-radius: 2.784px;
+      background: var(--Brand-Primary, #4caf4f);
+      align-self: stretch;
+      display: flex;
+      gap: 6px;
+      color: var(--Neutral-White, #fff);
+      text-align: center;
+      margin: auto 0;
+      padding: 10px 22px;
+      border: none;
+      cursor: pointer;
+      width: 20%;
+    }
+    
+    .cta-text {
+      align-self: stretch;
+      margin: auto 0;
+    }
+    
+    .hero-section {
+      z-index: 0;
+      display: inline-block;
+      min-width: 240px;
+      min-height: 633px;
+      flex-direction: column;
+      font-family: Inter, sans-serif;
+      justify-content: start;
+      flex-grow: 1;
+      width: 954px;
+    }
+    
+    .hero-content {
+      align-items: center;
+      background: var(--Neutral-Silver, #f5f7fa);
+      display: flex;
+      width: 100%;
+      gap: 40px 72px;
+      justify-content: start;
+      flex-wrap: wrap;
+      padding: 67px 100px;
+    }
+    
+    .hero-text-container {
+      align-self: stretch;
+      display: flex;
+      min-width: 240px;
+      flex-direction: column;
+      justify-content: start;
+      flex: 1;
+    }
+    
+    .hero-title {
+      color: var(--Brand-Primary, #000);
+      font-size: 45px;
+      font-weight: 600;
+      line-height: 53px;
+    }
+    
+    .hero-subtitle {
+      color: var(--Neutral-Grey, #717171);
+      font-size: 11px;
+      font-weight: 400;
+      margin-top: 11px;
+    }
+    .card-text{
+      display: block;
+      padding: 50px;
+      padding-left: 250px;
+    }
+    
+    .features-section {
+      position: relative;
+      display: flex;
+      margin-top: 28px;
+      width: 100%;
+      max-width: 1002px;
+      flex-direction: column;
+      text-align: center;
+      justify-content: start;
+      padding: 0 100px;
+    }
+    
+    .features-header {
+      align-self: center;
+      z-index: 0;
+      display: flex;
+      width: 773px;
+      max-width: 100%;
+      flex-direction: column;
+      justify-content: start;
+    }
+    .li{
+      text-decoration: none;
+      color: white;
+      width: 80px;
+      height: 80px;
+      background: #28CB8B;
+      padding: 10px;
+    }
+    
+    .features-title {
+      color: var(--Neutral-D_Grey, #4d4d4d);
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 1;
+    }
+    
+    .features-description {
+      color: var(--Neutral-Grey, #717171);
+      font-size: 11px;
+      font-weight: 400;
+      margin-top: 6px;
+    }
+    
+    .feature-card {
+      overflow-x: auto;
+      display: inline-block;
+      width: 100%;
+      align-items: start;
+      justify-content: center;
+    }
+    .headd{
+      font-size: 30px;
+      font-weight: 300;
+    }
+    
+    .card-content {
+      display: flex;
+      min-width: 240px;
+      width: 1002px;
+      align-items: center;
+      gap: 34px;
+      justify-content: space-between;
+      padding: 0 100px;
+    }
+    .s{
+      text-decoration: none;
+      background: #28CB8B;
+      color: white;
+      padding: 10px;
+    }
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+    .features-title{
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .features-description{
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    #special{
+      padding-left: 298px;
+    }
+    .st{
+      font-size: 15px;
+    }
+    .but{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    @media (max-width: 100%) {
+      .main-wrapper,
+      .header-container,
+      .hero-section,
+      .hero-content,
+      .hero-text-container,
+      .features-section,
+      .feature-card {
+        max-width: 100%;
+        padding: 0 20px;
+      }
+      
+      .hero-title {
+        font-size: 40px;
+        line-height: 52px;
+      }
+      
+      .nav-link {
+        white-space: initial;
+      }
+      
+      .cta-button {
+        padding: 0 20px;
+      }
+    }
+    </style>
+    
+    <div class="landing-container">
+      <div class="main-wrapper">
+        <header class="header-container">
+          <div class="headd">Namma Bengaluru</div>
+          <nav class="nav-menu">
+            <div class="menu-items">
+              <a href="index.html" class="nav-link">Home</a>
+              <a href="traffic.html" class="nav-link">Tourism Index</a>
+              <a href="safety.html" class="nav-link">Safety Index</a>
+              <a href="lost.html" class="nav-link">Lost and Found</a>
+            </div>
+            <button class="cta-button">
+              <span class="cta-text">Learn More</span>
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ac7f2e606e8380fe838eb39ed15b62138f9851a91b4ef0a803eca3e74b98ff3e?placeholderIfAbsent=true&apiKey=def10fd42c0f4c8b9f9d649220ed19f9" alt="" width="11" height="11" />
+            </button>
+          </nav>
+        </header>
+    
+        <section class="hero-section">
+          <div class="hero-content">
+            <div class="hero-text-container">
+              <h1 class="hero-title">Namma Bengaluru <span style="color: #4caf4f">the city we love-in Numbers</span></h1>
+              <p class="hero-subtitle">Travel and live across Bengaluru Safely</p>
+              <button class="cta-button">About us</button>
+            </div>
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/afa2845fc489afcec861c2d9c2ff6b6786bf9f7dac9025b994f17e5b56b28424?placeholderIfAbsent=true&apiKey=def10fd42c0f4c8b9f9d649220ed19f9" alt="Bengaluru city illustration" width="272" height="283" />
+          </div>
+    
+          <div class="features-section">
+            <div class="features-header">
+              <h2 class="features-title">Our Features</h2>
+            </div>
+            <div class="but">
+              <a class="s" href="traffic.html">Tourism Index</a>
+              <a class="s"href="safety.html">Safety Index</a>
+              <a class="s"href="lost.html">Lost and Found</a>
+            </div>
+            <p class="features-description">More to come!</p>
+          </div>
+        </section>
+    
+        <section class="feature-card">
+          <div class="card-content">
+            <div class="card-image">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1aeb55bf259fb59974a6770d7d9738c9e811965b7a50c3c984b4549e48aa532c?placeholderIfAbsent=true&apiKey=def10fd42c0f4c8b9f9d649220ed19f9" alt="Tourist places illustration" width="308" height="223" />
+            </div>
+            <div class="card-text">
+              <h3 class="features-title">Find out The popular tourist places and their traffic to plan smooth travels!</h3>
+              <p class="features-description st">We will gather data from all the popular tourist places and tell you about the traffic on the way and the crowd over there so that you never have to wait in a line.</p>
+              <a class="li"href="traffic.html">Learn more</a>
+            </div>
+          </div>
+        </section>
+    
+        <section class="feature-card">
+          <div class="card-content">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d1df68e1338c53978cb107e5ee3a8938d76efc6fc4e436ad805f879b3fcfcb55?placeholderIfAbsent=true&apiKey=def10fd42c0f4c8b9f9d649220ed19f9" alt="Safety illustration" width="307" height="300" />
+            <div class="card-text">
+              <h3 class="features-title">Want travel safely? Look no further</h3>
+              <p class="features-description st">With our up to date data on various places around Bengaluru you will never end up in a place you dont want to.</p>
+              <a class="li"href="safety.html">Learn more</a>
+            </div>
+          </div>
+        </section>
+    
+        <section class="feature-card">
+          <div class="card-content">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/129e824fb7b7e5e0d40e0acfee0e9b5905fe16e5d2cbd822f1b78ba9333b2a11?placeholderIfAbsent=true&apiKey=def10fd42c0f4c8b9f9d649220ed19f9" alt="Lost and found illustration" width="255" height="197" />
+            <div class="card-text" id="special">
+              <h3 class="features-title">Lost something? We will help you find it</h3>
+              <p class="features-description st">We will help you find the things you lost by the information from our users and security systems</p>
+              <a class="li"href="lost.html">Learn more</a>
+            </div>
+          </div>
+        </section>
+    
+        <h1 class="visually-hidden">Namma Bengaluru</h1>
+      </div>
+    </div>

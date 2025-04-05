@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lost and Found in Bangalore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Lost and Found in Bangalore</h1>
+    <p>Help us record and find lost or found items, people, and more!</p>
+</header>
+
+<div class="container">
+    <h2>Submit Lost or Found Item</h2>
+    <form id="lost-found-form">
+        <label for="type">Type of Item:</label>
+        <select id="type" name="type" required>
+            <option value="item">Item</option>
+            <option value="person">Person</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="name">Your Name (Optional):</label>
+        <input type="text" id="name" name="name" placeholder="Your Name">
+
+        <label for="contact">Contact Information (Phone/Email):</label>
+        <input type="text" id="contact" name="contact" placeholder="Your Contact Info" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" placeholder="Describe the lost or found item/person..." required></textarea>
+
+        <label for="location">Location (Where it was lost/found):</label>
+        <input type="text" id="location" name="location" placeholder="Location in Bangalore" required>
+
+        <label for="date">Date of Incident:</label>
+        <input type="date" id="date" name="date" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p class="redirect">
+        <a href="records.html">View All Lost and Found Records</a>
+    </p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Lost and Found Bangalore | All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lost and Found Records - Bangalore</title>
+    <link rel="stylesheet" href="lost.css">
+</head>
+<body>
+
+<header>
+    <h1>Lost and Found Records - Bangalore</h1>
+    <p>All the submitted lost and found items, people, and more in Bangalore.</p>
+</header>
+
+<div class="container">
+    <h2>All Records</h2>
+    <div id="records-container">
+        <!-- Lost and Found records will be displayed here -->
+    </div>
+
+    <p class="redirect">
+        <a href="index.html">Submit a New Record</a>
+    </p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Lost and Found Bangalore | All rights reserved.</p>
+</footer>
+
+<script src="lost.js"></script>
+
+</body>
+</html>
